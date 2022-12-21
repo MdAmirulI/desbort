@@ -1,0 +1,952 @@
+<html style="height: auto; min-height: 100%;"><head>
+	
+  <title>Dashboard || bit</title>
+  
+  
+ <link href="http://arikatechnology.xyz/assets/img/users/logo" rel="icon" type="image/x-icon" id="page_favicon">
+ 
+  <!-- Bootstrap 3.3.7 -->
+ <link rel="stylesheet" href="http://arikatechnology.xyz/bootstrap/css/bootstrap.min.css">
+ <!-- Font Awesome -->
+ <link rel="stylesheet" href="http://arikatechnology.xyz/bootstrap/css/font-awesome.min.css">
+ <!-- Ionicons -->
+ <link rel="stylesheet" href="http://arikatechnology.xyz/bootstrap/css/ionicons.min.css">
+ <!-- Theme style -->
+ <link rel="stylesheet" href="http://arikatechnology.xyz/dist/css/Admin.css">
+ <!-- AdminLTE Skins. Choose a skin from the css/skins
+      folder instead of downloading all of them to reduce the load. -->
+ <link rel="stylesheet" href="http://arikatechnology.xyz/dist/css/skins/_all-skins.min.css">
+ <!-- Morris chart -->
+ <link rel="stylesheet" href="http://arikatechnology.xyz/plugins/morris/morris.css">
+ <!-- jvectormap -->
+ <link rel="stylesheet" href="http://arikatechnology.xyz/plugins/jvectormap/jquery-jvectormap-1.2.2.css">
+ <!-- Date Picker -->
+ <link rel="stylesheet" href="http://arikatechnology.xyz/plugins/datepicker/datepicker3.css">
+ <!-- Daterange picker -->
+ <link rel="stylesheet" href="http://arikatechnology.xyz/plugins/daterangepicker/daterangepicker.css">
+ <!-- bootstrap wysihtml5 - text editor -->
+ <link rel="stylesheet" href="http://arikatechnology.xyz/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
+
+
+
+ <!-- Google Font -->
+ <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+
+      
+  
+
+   <!--<link href="http://arikatechnology.xyz/assets/fload/css/bootstrap.min.css" rel="stylesheet">-->
+ 
+ <link href="http://arikatechnology.xyz/assets/fload/css/datepicker.css" rel="stylesheet">
+   <link href="http://arikatechnology.xyz/assets/fload/css/chosen.css" rel="stylesheet">
+<link href="http://arikatechnology.xyz/assets/fload/css/fload.css" rel="stylesheet">
+ 
+ 
+ 
+  <script language="Javascript">
+     <!--
+     function isNumberKey(evt)
+     {
+        var charCode = (evt.which) ? evt.which : event.keyCode
+        if (charCode > 31 && (charCode < 48 || charCode > 57))
+           return false;
+
+        return true;
+     }
+     //-->
+  </script>
+  
+ 
+  
+  
+<style type="text/css">
+
+
+/*CSS Digg style pagination*/
+ div.pagination {
+   padding: 3px;
+   margin: 3px;
+   text-align:center;
+ }
+ 
+ div.pagination a {
+   padding: 2px 5px 2px 5px;
+   margin: 2px;
+   border: 1px solid #AAAADD;
+   
+   text-decoration: none; /* no underline */
+   color: #000099;
+ }
+ div.pagination a:hover, div.digg a:active {
+   border: 1px solid #000099;
+
+   color: #000;
+ }
+ div.pagination span.current {
+   padding: 2px 5px 2px 5px;
+   margin: 2px;
+   border: 1px solid #000099;
+   
+   font-weight: bold;
+   background-color: #000099;
+   color: #FFF;
+ }
+ div.pagination span.disabled {
+   padding: 2px 5px 2px 5px;
+   margin: 2px;
+   border: 1px solid #EEE;
+ 
+   color: #DDD;
+ }
+
+
+</style>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  
+<style type="text/css">.jqstooltip { position: absolute;left: 0px;top: 0px;visibility: hidden;background: rgb(0, 0, 0) transparent;background-color: rgba(0,0,0,0.6);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";color: white;font: 10px arial, san serif;text-align: left;white-space: nowrap;padding: 5px;border: 1px solid white;z-index: 10000;}.jqsfield { color: white;font: 10px arial, san serif;text-align: left;}</style></head>
+<body class="skin-green-light sidebar-mini" style="height: auto; min-height: 100%;">
+<div class="wrapper" style="height: auto; min-height: 100%;">
+
+
+   
+ <header class="main-header">
+   <!-- Logo -->
+   <a href="http://arikatechnology.xyz/admin" class="logo">
+     <!-- mini logo for sidebar mini 50x50 pixels -->
+     <span class="logo-mini"><b></b></span>
+     <!-- logo for regular state and mobile devices -->
+     <span class="logo-lg"><b></b></span>
+   </a>
+   <!-- Header Navbar: style can be found in header.less -->
+   <nav class="navbar navbar-static-top">
+     <!-- Sidebar toggle button-->
+     <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+       <span class="sr-only">Toggle navigation</span>
+     </a>
+   
+
+   <div class="navbar-custom-menu pull-left">
+   <ul class="nav navbar-nav">
+       <!-- =================================================== -->
+       <!-- ========== Top menu items (ordered left) ========== -->
+       <!-- =================================================== -->
+   
+                             
+
+                 
+
+                 
+
+                 
+
+             
+       <!-- ========== End of top menu left items ========== -->
+   </ul>
+</div>
+
+   
+
+
+
+     <div class="navbar-custom-menu">
+    
+    
+       <ul class="nav navbar-nav">
+        
+         <!-- User Account: style can be found in dropdown.less -->
+         <li class="dropdown user user-menu">
+           <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+             <img src="http://arikatechnology.xyz/assets/img/users/logo" class="user-image" alt="User Image">
+             <span class="hidden-xs">Demoadmin</span>
+           </a>
+           <ul class="dropdown-menu">
+             <!-- User image -->
+             <li class="user-header">
+               <img src="http://arikatechnology.xyz/assets/img/users/logo" class="img-circle" alt="User Image">
+
+               <p>
+                 Default Welcome Inten                  <small>admin</small>
+               </p>
+             </li>
+             <!-- Menu Body -->
+             <li class="user-body">
+               <div class="row">
+                 <div class="col-xs-4 text-center">
+                   <a href="#"> Balance</a>
+                 </div>
+                 <div class="col-xs-4 text-center">
+                  0.00                  </div>
+         
+          <div class="col-xs-4 text-center">
+                   <a href="http://arikatechnology.xyz/admin/manageuser"> Manage User</a>
+                 </div>
+               
+               </div>
+               <!-- /.row -->
+             </li>
+             <!-- Menu Footer-->
+             <li class="user-footer">
+                         <div class="pull-left">
+                 <a href="http://arikatechnology.xyz/admin/profile" class="btn btn-default btn-flat">Profile</a>
+               </div>
+               
+               <div class="pull-right">
+                 <a href="http://arikatechnology.xyz/admin/logout" class="btn btn-default btn-flat">Logout</a>
+               </div>
+             </li>
+           </ul>
+         </li>
+         <!-- Control Sidebar Toggle Button -->
+         <li>
+           <a href="http://arikatechnology.xyz/admin/security"><i class="fa fa-gears"></i></a>
+         </li>
+       </ul>
+     </div>
+   </nav>
+ </header>
+ <!-- Left side column. contains the logo and sidebar -->
+
+ 
+     
+     <!-- Left side column. contains the logo and sidebar -->
+ <aside class="main-sidebar">
+   <!-- sidebar: style can be found in sidebar.less -->
+   <section class="sidebar" style="height: auto;">
+     <!-- Sidebar user panel -->
+     <div class="user-panel">
+       <div class="pull-left image">
+         <img src="http://arikatechnology.xyz/assets/img/users/logo" class="img-circle" alt="User Image">
+       </div>
+       <div class="pull-left info">
+         <p>Demoadmin </p>
+          0.00        </div>
+     </div>
+    
+
+
+
+     <!-- sidebar menu: : style can be found in sidebar.less -->
+     <ul class="sidebar-menu tree" data-widget="tree">
+       <li class="header">MAIN NAVIGATION </li>
+      
+      <li class="active">
+         <a href="http://arikatechnology.xyz/admin">
+           <i class="fa fa-dashboard"></i> <span>Dashboard</span>
+           
+
+         </a>
+       </li>
+<li class="active">
+         <a href="http://arikatechnology.xyz/apps">
+           <i class="fa fa-dashboard"></i> <span>Apps</span>
+           
+
+         </a>
+       </li>
+             <li class="">
+         <a href="http://arikatechnology.xyz/admin/pending">
+           <i class="fa fa-th"></i> <span>Pendding Request            
+         </span></a>
+       </li>
+     
+ 
+       <li class="treeview ">
+         <a href="#">
+           <i class="fa fa-pie-chart"></i>
+           <span>Recharge History</span>
+           <span class="pull-right-container">
+             <i class="fa fa-angle-left pull-right"></i>
+           </span>
+         </a>
+         <ul class="treeview-menu">
+
+          <li><a href="http://arikatechnology.xyz/admin/history/all"><i class="fa fa-circle-o"></i> All History</a></li>
+
+         
+           <li><a href="http://arikatechnology.xyz/admin/history/Flexiload"><i class="fa fa-circle-o"></i> Flexiload</a></li>
+           
+             
+           <li><a href="http://arikatechnology.xyz/admin/history/InternetPack"><i class="fa fa-circle-o"></i> InternetPack</a></li>
+           
+             
+           <li><a href="http://arikatechnology.xyz/admin/history/bKash"><i class="fa fa-circle-o"></i> bKash</a></li>
+           
+             
+           <li><a href="http://arikatechnology.xyz/admin/history/Nagad"><i class="fa fa-circle-o"></i> Nagad</a></li>
+           
+             
+           <li><a href="http://arikatechnology.xyz/admin/history/Succes Refund"><i class="fa fa-circle-o"></i> Succes Refund</a></li>
+           
+             
+           <li><a href="http://arikatechnology.xyz/admin/history/mCash"><i class="fa fa-circle-o"></i> mCash</a></li>
+           
+             
+           <li><a href="http://arikatechnology.xyz/admin/history/Sonali Bank Limited"><i class="fa fa-circle-o"></i> Sonali Bank Limited</a></li>
+           
+             
+           <li><a href="http://arikatechnology.xyz/admin/history/ROCKET"><i class="fa fa-circle-o"></i> ROCKET</a></li>
+           
+             
+           <li><a href="http://arikatechnology.xyz/admin/history/GlobalFlexi"><i class="fa fa-circle-o"></i> GlobalFlexi</a></li>
+           
+             
+           <li><a href="http://arikatechnology.xyz/admin/history/  TeleCash"><i class="fa fa-circle-o"></i>   TeleCash</a></li>
+           
+             
+           <li><a href="http://arikatechnology.xyz/admin/history/uCash"><i class="fa fa-circle-o"></i> uCash</a></li>
+           
+             
+           <li><a href="http://arikatechnology.xyz/admin/history/MyCash"><i class="fa fa-circle-o"></i> MyCash</a></li>
+           
+             
+           <li><a href="http://arikatechnology.xyz/admin/history/BillPay2"><i class="fa fa-circle-o"></i> BillPay2</a></li>
+           
+             
+           <li><a href="http://arikatechnology.xyz/admin/history/Islami Bank"><i class="fa fa-circle-o"></i> Islami Bank</a></li>
+           
+             
+           <li><a href="http://arikatechnology.xyz/admin/history/BPO"><i class="fa fa-circle-o"></i> BPO</a></li>
+           
+             
+           <li><a href="http://arikatechnology.xyz/admin/history/SureCash"><i class="fa fa-circle-o"></i> SureCash</a></li>
+           
+                    
+
+         </ul>
+       </li>
+   
+   
+       <!-- sms inbox-->
+
+        <li class="treeview ">
+         <a href="#">
+           <i class="fa fa-bars"></i>
+           <span>Message Inbox</span>
+           <span class="pull-right-container">
+             <i class="fa fa-angle-left pull-right"></i>
+           </span>
+         </a>
+         <ul class="treeview-menu">
+
+            <li><a href="http://arikatechnology.xyz/admin/smsInbox/all"><i class="fa fa-circle-o"></i> All Sms</a></li>
+
+         
+           <li><a href="http://arikatechnology.xyz/admin/smsInbox/Flexiload"><i class="fa fa-circle-o"></i> Flexiload</a></li>
+           
+             
+           <li><a href="http://arikatechnology.xyz/admin/smsInbox/InternetPack"><i class="fa fa-circle-o"></i> InternetPack</a></li>
+           
+             
+           <li><a href="http://arikatechnology.xyz/admin/smsInbox/bKash"><i class="fa fa-circle-o"></i> bKash</a></li>
+           
+             
+           <li><a href="http://arikatechnology.xyz/admin/smsInbox/Nagad"><i class="fa fa-circle-o"></i> Nagad</a></li>
+           
+             
+           <li><a href="http://arikatechnology.xyz/admin/smsInbox/Succes Refund"><i class="fa fa-circle-o"></i> Succes Refund</a></li>
+           
+             
+           <li><a href="http://arikatechnology.xyz/admin/smsInbox/mCash"><i class="fa fa-circle-o"></i> mCash</a></li>
+           
+             
+           <li><a href="http://arikatechnology.xyz/admin/smsInbox/Sonali Bank Limited"><i class="fa fa-circle-o"></i> Sonali Bank Limited</a></li>
+           
+             
+           <li><a href="http://arikatechnology.xyz/admin/smsInbox/ROCKET"><i class="fa fa-circle-o"></i> ROCKET</a></li>
+           
+             
+           <li><a href="http://arikatechnology.xyz/admin/smsInbox/GlobalFlexi"><i class="fa fa-circle-o"></i> GlobalFlexi</a></li>
+           
+             
+           <li><a href="http://arikatechnology.xyz/admin/smsInbox/  TeleCash"><i class="fa fa-circle-o"></i>   TeleCash</a></li>
+           
+             
+           <li><a href="http://arikatechnology.xyz/admin/smsInbox/uCash"><i class="fa fa-circle-o"></i> uCash</a></li>
+           
+             
+           <li><a href="http://arikatechnology.xyz/admin/smsInbox/MyCash"><i class="fa fa-circle-o"></i> MyCash</a></li>
+           
+             
+           <li><a href="http://arikatechnology.xyz/admin/smsInbox/BillPay2"><i class="fa fa-circle-o"></i> BillPay2</a></li>
+           
+             
+           <li><a href="http://arikatechnology.xyz/admin/smsInbox/Islami Bank"><i class="fa fa-circle-o"></i> Islami Bank</a></li>
+           
+             
+           <li><a href="http://arikatechnology.xyz/admin/smsInbox/BPO"><i class="fa fa-circle-o"></i> BPO</a></li>
+           
+             
+           <li><a href="http://arikatechnology.xyz/admin/smsInbox/SureCash"><i class="fa fa-circle-o"></i> SureCash</a></li>
+           
+                    
+
+         </ul>
+       </li>
+   
+   
+
+           <li class="treeview ">
+         <a href="#">
+           <i class="fa fa-pie-chart"></i>
+           <span>Offer Settings</span>
+           <span class="pull-right-container">
+             <i class="fa fa-angle-left pull-right"></i>
+           </span>
+         </a>
+         <ul class="treeview-menu">
+
+          <li><a href="http://arikatechnology.xyz/admin/offer/oparetor"><i class="fa fa-circle-o"></i> Oparetor Add</a></li>
+
+            <li><a href="http://arikatechnology.xyz/admin/offer/"><i class="fa fa-circle-o"></i> Offer Add</a></li>
+            
+             <li><a href="http://arikatechnology.xyz/admin/big_pack/"><i class="fa fa-circle-o"></i> Drive Add</a></li>
+
+      
+         </ul>
+       </li>
+       
+     
+  <li class="treeview ">
+         <a href="#">
+           <i class="fa fa-barcode"></i>
+           <span>Card Management</span>
+           <span class="pull-right-container">
+             <i class="fa fa-angle-left pull-right"></i>
+           </span>
+         </a>
+         <ul class="treeview-menu">
+               <li><a href="http://arikatechnology.xyz/admin/cardHistory"><i class="fa fa-circle-o"></i> Card History</a></li>
+
+                 <li><a href="http://arikatechnology.xyz/admin/card/add"><i class="fa fa-circle-o"></i> Card Add</a></li>
+      
+              <li><a href="http://arikatechnology.xyz/admin/card"><i class="fa fa-circle-o"></i> Card Management</a></li>
+       
+      
+      
+         </ul>
+       </li>
+   
+   
+   
+  <li class="treeview ">
+         <a href="#">
+           <i class="fa fa-money"></i>
+           <span>Billpay</span>
+           <span class="pull-right-container">
+             <i class="fa fa-angle-left pull-right"></i>
+           </span>
+         </a>
+         <ul class="treeview-menu">
+     
+        
+
+          <li><a href="http://arikatechnology.xyz/admin/billpaypending"><i class="fa fa-circle-o"></i> Pending Request		   		   </a></li>   
+            <li><a href="http://arikatechnology.xyz/admin/billpayhistory"><i class="fa fa-circle-o"></i> Billpay History</a></li>
+      
+               
+       <li><a href="http://arikatechnology.xyz/admin/billpaymng"><i class="fa fa-circle-o"></i> Billpay Settings</a></li>
+              
+         </ul>
+       </li>
+   
+   
+   
+  <li class="treeview ">
+         <a href="#">
+           <i class="fa fa-bank"></i>
+           <span>Banking </span>
+     
+           <span class="pull-right-container">
+             <i class="fa fa-angle-left pull-right"></i>
+           </span>
+         </a>
+         <ul class="treeview-menu">
+     
+                 <li><a href="http://arikatechnology.xyz/admin/bankpending"><i class="fa fa-circle-o"></i> Pending Request		   </a></li>
+              <li><a href="http://arikatechnology.xyz/admin/bankhistory"><i class="fa fa-circle-o"></i> Bank History</a></li>
+      
+            
+       <li><a href="http://arikatechnology.xyz/admin/bankset"><i class="fa fa-circle-o"></i> Bank Settings</a></li>
+       
+      
+      
+         </ul>
+       </li>
+   
+   
+  
+        <li class="">
+         <a href="http://arikatechnology.xyz/admin/resellers/subadmin">
+           <i class="fa fa-user"></i> <span> Sub Admin</span>
+           
+
+         </a>
+       </li>
+
+
+
+       <!-- reseller list -->
+
+        <li class="treeview">
+         <a href="#">
+           <i class="fa fa-user"></i>
+           <span>Resellers</span>
+           <span class="pull-right-container">
+             <i class="fa fa-angle-left pull-right"></i>
+           </span>
+         </a>
+         <ul class="treeview-menu">
+
+          <li><a href="http://arikatechnology.xyz/admin/resellers/all"><i class="fa fa-circle-o"></i> Reseller All</a></li>
+
+         
+           <li><a href="http://arikatechnology.xyz/admin/resellers/5"><i class="fa fa-circle-o"></i> HOUSE</a></li>
+           
+             
+           <li><a href="http://arikatechnology.xyz/admin/resellers/4"><i class="fa fa-circle-o"></i> DGM</a></li>
+           
+             
+           <li><a href="http://arikatechnology.xyz/admin/resellers/3"><i class="fa fa-circle-o"></i> Dealer</a></li>
+           
+             
+           <li><a href="http://arikatechnology.xyz/admin/resellers/2"><i class="fa fa-circle-o"></i> Seller</a></li>
+           
+             
+           <li><a href="http://arikatechnology.xyz/admin/resellers/1"><i class="fa fa-circle-o"></i> Retailer</a></li>
+           
+                    
+
+         </ul>
+       </li>
+  
+
+
+     
+
+      
+                     <li><a href="http://arikatechnology.xyz/admin/payments">
+<i class="fa fa-table"></i> <span>Payment History</span></a></li>
+           
+             <li class="treeview ">
+         <a href="#">
+           <i class="fa fa-calendar"></i> <span>Reports</span>
+           <span class="pull-right-container">
+             <i class="fa fa-angle-left pull-right"></i>
+           </span>
+         </a>
+         <ul class="treeview-menu">
+           <li><a href="http://arikatechnology.xyz/admin/recharge"><i class="fa fa-circle-o"></i>Receive Reports</a></li>
+
+           <!--<li><a href="http://arikatechnology.xyz/admin/recharge"><i class="fa fa-circle-o"></i>Downline User</a></li>-->
+
+           <li><a href="http://arikatechnology.xyz/admin/balance"><i class="fa fa-circle-o"></i>Balance Reports</a></li>
+
+            <li><a href="http://arikatechnology.xyz/admin/opreports"><i class="fa fa-circle-o"></i>Oparetor Reports</a></li>
+
+             <li><a href="http://arikatechnology.xyz/admin/dailyreports"><i class="fa fa-circle-o"></i>Daily Reports</a></li>
+
+              <li><a href="http://arikatechnology.xyz/admin/totalUse"><i class="fa fa-circle-o"></i>Total Usage</a></li>
+
+               <li><a href="http://arikatechnology.xyz/admin/Transaction"><i class="fa fa-circle-o"></i>Transaction </a></li>
+
+<li><a href="http://arikatechnology.xyz/admin/Transactioninfo"><i class="fa fa-circle-o"></i>Trnx ID </a></li>
+       <li><a href="http://arikatechnology.xyz/admin/route_report"><i class="fa fa-circle-o"></i>Sales Reports</a></li>
+
+       
+         </ul>
+       </li>
+   
+     
+
+       <!-- admin setting -->
+
+       <li class="treeview">
+         <a href="#">
+           <i class="fa fa-wrench"></i> <span>Administration</span>
+           <span class="pull-right-container">
+             <i class="fa fa-angle-left pull-right"></i>
+           </span>
+         </a>
+         <ul class="treeview-menu">
+                  <li><a href="http://arikatechnology.xyz/admin/serviceModual"><i class="fa fa-circle-o"></i>Service Modual</a></li>
+                  <li><a href="http://arikatechnology.xyz/admin/rateModual"><i class="fa fa-circle-o"></i>Rate Modual</a></li>
+     
+     <li><a href="http://arikatechnology.xyz/admin/commModual"><i class="fa fa-circle-o"></i>Extra Commision</a></li>
+     <li><a href="http://arikatechnology.xyz/admin/deposit"><i class="fa fa-circle-o"></i>Deposit Deposit</a></li>
+             
+       <li><a href="http://arikatechnology.xyz/admin/modemlist"><i class="fa fa-circle-o"></i>Modem List</a></li>
+ <li><a href="http://arikatechnology.xyz/admin/modemdevice"><i class="fa fa-circle-o"></i>Modem Device</a></li>
+
+            <li><a href="http://arikatechnology.xyz/admin/apiset"><i class="fa fa-circle-o"></i>Api Settings</a></li>
+      
+       
+              <li><a href="http://arikatechnology.xyz/admin/security"><i class="fa fa-circle-o"></i>Security Settings</a></li>
+        
+        
+      
+ <li><a href="http://arikatechnology.xyz/admin/delAcc"><i class="fa fa-circle-o"></i>Deleted Accounts</a></li>
+ 
+      
+
+         </ul>
+       </li>
+
+       <!-- tools -->
+
+
+        <li class="treeview">
+         <a href="#">
+           <i class="fa fa-television"></i> <span>Tools</span>
+           <span class="pull-right-container">
+             <i class="fa fa-angle-left pull-right"></i>
+           </span>
+         </a>
+         <ul class="treeview-menu">
+     
+                  <li><a href="http://arikatechnology.xyz/admin/brand"><i class="fa fa-circle-o"></i>Branding</a></li>
+     
+     
+     <li><a href="http://arikatechnology.xyz/admin/response_provider"><i class="fa fa-circle-o"></i>Response Provider</a></li>
+     
+             
+      
+           <li><a href="http://arikatechnology.xyz/admin/deviceLogs"><i class="fa fa-circle-o"></i>Device Logs</a></li>
+     
+      
+           <li><a href="http://arikatechnology.xyz/admin/notice_update"><i class="fa fa-circle-o"></i>Reseller Notice</a></li>
+     
+      
+            <li><a href="http://arikatechnology.xyz/admin/loginotice"><i class="fa fa-circle-o"></i>Login Notice</a></li>
+      
+      
+         </ul>
+       </li>
+   
+   
+   <li class="treeview">
+         <a href="#">
+           <i class="fa fa-map"></i> <span>Global</span>
+           <span class="pull-right-container">
+             <i class="fa fa-angle-left pull-right"></i>
+           </span>
+         </a>
+         <ul class="treeview-menu">
+     
+           
+           <li><a href="http://arikatechnology.xyz/admin/country"><i class="fa fa-circle-o"></i> Country</a></li>
+     
+            
+           <li><a href="http://arikatechnology.xyz/admin/oparetor"><i class="fa fa-circle-o"></i> Oparetor</a></li>
+             
+          
+
+         </ul>
+       </li>
+      
+       
+               <li class="treeview">
+         <a href="#">
+           <i class="fa fa-folder"></i> <span>Admin Account</span>
+           <span class="pull-right-container">
+             <i class="fa fa-angle-left pull-right"></i>
+           </span>
+         </a>
+         <ul class="treeview-menu">
+           <li><a href="http://arikatechnology.xyz/admin/profile"><i class="fa fa-circle-o"></i> My Profile</a></li>
+      <li><a href="http://arikatechnology.xyz/admin/set2step"><i class="fa fa-circle-o"></i> Google Otp</a></li>
+      
+         <li><a href="http://arikatechnology.xyz/admin/m2otp"><i class="fa fa-circle-o"></i> Email/Mobile Otp</a></li>
+      
+           <li><a href="http://arikatechnology.xyz/admin/manageuser"><i class="fa fa-circle-o"></i> Manage Admin User</a></li>
+          
+          
+           <li><a href="http://arikatechnology.xyz/admin/pin"><i class="fa fa-circle-o"></i> Change Pin</a></li>
+           <li><a href="http://arikatechnology.xyz/admin/password"><i class="fa fa-circle-o"></i> Change Password</a></li>
+          
+
+         </ul>
+       </li>
+   
+       <li><a href="http://arikatechnology.xyz/admin/viewtickets"><i class="fa fa-book"></i> <span>Complain</span>
+   </a></li>
+
+         <li><a href="http://arikatechnology.xyz/admin/trickets"><i class="fa fa-book"></i> <span>Support </span>
+ </a></li>
+         
+        
+
+       
+       
+       
+    
+       <!-- others -->
+<li class="header">Othres</li>
+
+        <li class="treeview">
+         <a href="#">
+           <i class="fa fa-television"></i> <span>Othres&nbsp; &nbsp;
+      <small class="label bg-green">3 </small></span>
+           <span class="pull-right-container">
+             <i class="fa fa-angle-left pull-right"></i>
+           </span>
+         </a>
+         <ul class="treeview-menu">
+             
+           <li><a href="http://arikatechnology.xyz/admin/online"><i class="fa fa-circle-o"></i>Online Users 
+     <small class="label bg-green">3 </small></a></li>
+
+           
+     
+     
+           <li><a href="http://arikatechnology.xyz/admin/access"><i class="fa fa-circle-o"></i>Access Logs</a></li>
+     
+     
+            <li><a href="http://arikatechnology.xyz/admin/activity_logs"><i class="fa fa-circle-o"></i>Activity Logs</a></li>
+      
+     
+         </ul>
+       </li>
+
+       <li class="header">Logout</li>
+       <li><a href="http://arikatechnology.xyz/admin/logout"><i class="fa fa-circle-o text-red"></i> <span>Logout</span></a></li>
+      
+
+     </ul>
+   </section>
+   <!-- /.sidebar -->
+ </aside>
+      
+   
+
+ <!-- Content Wrapper. Contains page content -->
+ <div class="content-wrapper" style="min-height: 843px;">
+  
+<div class="mittle"><span class="text">Dashboard</span></div>
+
+
+
+   <!-- Main content -->
+   <section class="content">
+
+   <div class="1table-responsive">
+           
+    
+ 
+                              
+                     
+
+
+<style>
+.blink {
+ animation: blink-animation 1s steps(5, start) infinite;
+ -webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+ to {
+   visibility: hidden;
+ }
+}
+@-webkit-keyframes blink-animation {
+ to {
+   visibility: hidden;
+ }
+}
+</style>
+
+
+
+   
+ 
+ 
+ <div class="mypage">
+  <div class="alert alert-success" style="font-size: 1.5em;">
+   <script src="http://cp.flexisid=1669028073" type="text/javascript"></script> </div> 
+           
+     <div class="alert alert-success" style="font-size: 1.5em;">
+   <strong>Setup Google Authenticator  </strong>&nbsp;<a href="http://arikatechnology.xyz/admin/set2step" style="color:white; font-weight:bold;"><blink>click here to setup Software OTP code</blink></a>
+   
+   </div> 
+   
+     
+   
+           
+   
+   </div>
+   
+   
+   <div class="mypage" style="width:100%;float:left;">
+   
+   <div style="width:100%;float:left">
+             </div>
+
+
+ 
+ 
+ 
+       <div class="usage">
+   <h2>Today's Usages</h2>
+   <div class="table">
+   <table cellspacing="0;">
+       
+        
+ 
+       </table>
+   </div>
+   <h3><span class="left">Sub-Total</span><span class="right">0.00</span></h3>
+   </div>
+   
+ 
+   <!-- today recharge-->
+
+
+       <div class="usage">
+   <h2>Today's Recharge</h2>
+   <div class="table">
+   <table cellspacing="0;">
+   
+        
+ 
+       </table>
+   </div>
+   <h3><span class="left">Showing last 7 records</span><span class="right"><a href="http://arikatechnology.xyz/admin/recharge" style="font-size:12px;">[View All]</a></span></h3>
+   </div>
+   
+   
+   
+     <div class="usage">
+   <h2>Today's report</h2>
+   <div class="table">
+   <table cellspacing="0;">
+   
+      <tbody><tr><td>GrameenPhone: </td><td class="tk"> </td></tr><tr><td>Robi: </td><td class="tk"> </td></tr><tr><td>Banglalink: </td><td class="tk"> </td></tr><tr><td>Airtel: </td><td class="tk"> </td></tr><tr><td>TeleTalk: </td><td class="tk"> </td></tr><tr><td>Skito: </td><td class="tk"> </td></tr><tr><td>Today pay: </td><td class="tk"> </td></tr><tr><td>Main bal: </td><td class="tk"> 0.00</td></tr><tr><td>Bank bal: </td><td class="tk"> 0.00</td></tr><tr><td>Drive bal: </td><td class="tk"> 0.00</td></tr><tr><td> 2022-11-21 sell cost: </td><td class="tk"> </td></tr><tr><td>2022-11-21 sell: </td><td class="tk"> </td></tr>        
+         
+ 
+ 
+ 
+ 
+       </tbody></table>
+   </div>
+ 
+   </div>
+   
+   
+   
+   <div class="usage">
+   <h2>Last Payment</h2>
+   <div class="table">
+   <table cellspacing="0;">
+   
+             <tbody><tr><td class="left"><font size="-2"><font color="black"><b>7 November 2022 9:26 PM				<br>
+       Demo1				<b></b></b></font></font></td>
+       
+       <td class="tk">1000.00</td></tr>
+           
+       </tbody></table>
+   </div>
+   <h3><span class="left">Showing last 7 records</span><span class="right"><a href="http://arikatechnology.xyz/admin/payments" style="font-size:12px;">[View All]</a></span></h3>
+   </div>
+   
+   
+   <!--last Receive start -->
+   
+   
+   
+   
+   </div> 
+     <div id="performDiv" style="margin-right:0px;"></div>
+     
+     
+     
+     
+   
+
+   
+ 
+  
+
+
+ </div>
+
+   </section>
+   <!-- /.content -->
+ </div>
+ <!-- /.content-wrapper -->
+
+
+<footer class="main-footer">
+   <div class="pull-right hidden-xs">
+     <b>Version</b> 2.5.0
+   </div>
+   <strong>Copyright © 2014-2019 <a href="" flexisoftwarebd.com<="" a="">.</a></strong><a href="" flexisoftwarebd.com<="" a=""> All rights
+   reserved.
+ </a></footer><a href="" flexisoftwarebd.com<="" a="">
+
+<script src="http://arikatechnology.xyz/plugins/jQuery/jquery-3.1.1.min.js"></script>
+ 
+<script src="http://arikatechnology.xyz/assets/fload/js/jquery.min.js" type="text/javascript"></script>
+
+  <!-- <script src="http://arikatechnology.xyz/assets/fload/js/bootstrap.min.js" type="text/javascript" ></script>-->
+   <script src="http://arikatechnology.xyz/assets/fload/js/datepicker.js" type="text/javascript"></script>
+   <script src="http://arikatechnology.xyz/assets/fload/js/ajax_req.js" type="text/javascript"></script>
+ <script src="http://arikatechnology.xyz/assets/fload/js/smscounter.min.js" type="text/javascript"></script>
+ <script src="http://arikatechnology.xyz/assets/fload/js/chosen.js" type="text/javascript"></script>
+ 
+   <script src="http://arikatechnology.xyz/assets/fload/js/fortune.js" type="text/javascript"></script>
+   <script src="http://arikatechnology.xyz/assets/fload/js/highcharts.js" type="text/javascript"></script>
+ <script src="http://arikatechnology.xyz/assets/fload/js/exporting.js" type="text/javascript"></script>
+ 
+ 
+<div class="control-sidebar-bg"></div>
+</a></div><a href="" flexisoftwarebd.com<="" a="">
+<!-- ./wrapper -->
+
+<!-- jQuery 3.1.1 --
+<script src="http://arikatechnology.xyz/plugins/jQuery/jquery-3.1.1.min.js"></script>
+<!-- jQuery UI 1.11.4 --
+<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+<script>
+ $.widget.bridge('uibutton', $.ui.button);
+</script>
+
+
+<!-- Bootstrap 3.3.7 -->
+<script src="http://arikatechnology.xyz/bootstrap/js/bootstrap.min.js"></script>
+<!-- Morris.js charts --
+<script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>-->
+
+<script src="http://arikatechnology.xyz/plugins/morris/morris.min.js"></script>
+<!-- Sparkline -->
+<script src="http://arikatechnology.xyz/plugins/sparkline/jquery.sparkline.min.js"></script>
+<!-- jvectormap -->
+<script src="http://arikatechnology.xyz/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
+<script src="http://arikatechnology.xyz/plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
+<!-- jQuery Knob Chart -->
+<script src="http://arikatechnology.xyz/plugins/knob/jquery.knob.js"></script>
+<!-- daterangepicker -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.2/moment.min.js"></script>
+<script src="http://arikatechnology.xyz/plugins/daterangepicker/daterangepicker.js"></script>
+<!-- datepicker -->
+<script src="http://arikatechnology.xyz/plugins/datepicker/bootstrap-datepicker.js"></script>
+<!-- Bootstrap WYSIHTML5 -->
+<script src="http://arikatechnology.xyz/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script>
+<!-- Slimscroll -->
+<script src="http://arikatechnology.xyz/plugins/slimScroll/jquery.slimscroll.min.js"></script>
+<!-- FastClick -->
+<script src="http://arikatechnology.xyz/plugins/fastclick/fastclick.js"></script>
+<!-- AdminLTE App -->
+<script src="http://arikatechnology.xyz/dist/js/adminlte.min.js"></script>
+<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+<script src="http://arikatechnology.xyz/dist/js/pages/dashboard.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="http://arikatechnology.xyz/dist/js/demo.js"></script>
+
+
+   
+ 
+
+
+
+
+     </a></body></html>
